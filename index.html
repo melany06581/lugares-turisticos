@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turisticos</title>
+    <style>
+        /*Estilos básicos e intuitivos*/
+        body{
+            font-family:Papyrus;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header{
+            background-color: #005f73;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .tarjeta{
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0, 1);
+        }
+
+        /*Estilo para las imagenes clickeables*/
+        .tarjeta img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        /*Ejecto visual al pasar el ratón sobre la imagen*/
+        .tarjeta img:hover{
+            transform: scale(1.05);
+        }
+
+        .info{
+            padding: 15px;
+        }
+
+        .info h3{
+            margin-top: 0;
+            color: #0a9396;
+        }
+
+        .indicacion{
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        footer{
+            background-color: #001219;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descubre Camargo y la Región.</h1> 
+        <p>Haz click en la imagen de cualquier lugar vara ver más información.</p>
+    </header>
+
+    <main class="contenedor">
+        <!--LUGAR TURISTICO 1: Presa La Boquilla-->
+        <article class="tarjeta">
+        <!--La tarjeta <a> envuelve a la etiqueta <img> para que funcione como hipervinculo-->
+        <a href="presa.html">
+        <img src="presa_boquilla.jpg" alt="Presa La Boquilla"> 
+        </a>
+        <div class="info">
+        <h3>Presa La Boquilla</h3>
+        <p>Uno de los cuerpos de agua más importantes y hermosos de la región, ideal para la pesca y paseo en lancha.</p>
+        <p class="indicacion"></p>Click en la imagen para ver más detalles</p>
+        </div>
+        </article>
+
+         <!--LUGAR TURISTICO 2: Los Filtros/ Santa Rosalia-->
+         <article class="tarjeta">
+            <!--La tarjeta <a> envuelve a la etiqueta <img> para que funcione como hipervinculo-->
+            <a href="filtros.html">
+            <img src="los_filtros1.jpg" alt="Balneario Los Filtros"> 
+            </a>
+            <div class="info">
+            <h3>Los Filtros</h3>
+            <p>Zona recreativa de manantiales y balnearios de aguas termales, exelente para disfrutar en familia.</p>
+            <p class="indicacion"></p>Click en la imagen para ver más detalles</p>
+            </div>
+            </article>
+
+             <!--LUGAR TURISTICO 3:Ojo Caliente -->
+        <article class="tarjeta">
+            <!--La tarjeta <a> envuelve a la etiqueta <img> para que funcione como hipervinculo-->
+            <a href="OjoCaliente.html">
+            <img src="ojo_caliente.jpg" alt="Ojo Caliente"> 
+            </a>
+            <div class="info">
+            <h3>Ojo Caliente</h3>
+            <p>Famosos baños termales con propiedades minerales, perfectos para la relajación y el descanso.</p>
+            <p class="indicacion"></p>Click en la imagen para ver más detalles</p>
+            </div>
+            </article>
+
+           <!--LUGAR TURISTICO 3:Pueblitos-->
+        <article class="tarjeta">
+            <!--La tarjeta <a> envuelve a la etiqueta <img> para que funcione como hipervinculo-->
+            <a href="Pueblitos.html">
+            <img src="Pueblitos.jpg" alt="Pueblitos"> 
+            </a>
+            <div class="info">
+            <h3>Pueblitos</h3>
+            <p>Es un lugar turistico en la Sierra de Camargo, en donde puedes pasear, comer, descansar.</p>
+            <p class="indicacion"></p>Click en la imagen para ver más detalles</p>
+            </div>
+            </article> 
+
+    </main>
+
+    <footer>
+        <p>&copy;2026 Guía Turística de Camargo -Proyecto Educativo - Ilse González 5ºC - CBTis 143, Camargo,Chihuahua.</p>
+    </footer>
+</body>
+</html>
